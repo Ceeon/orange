@@ -1,0 +1,36 @@
+{
+  "manifest_version": 3,
+  "name": "小橘按键",
+  "version": "1.0.0",
+  "description": "一个简单实用的快捷网址管理工具，通过右键菜单快速访问常用网站。帮助用户更高效地组织和访问自己的常用网站。",
+  "author": "your@email.com",
+  "homepage_url": "https://github.com/yourusername/orange-key",
+  "permissions": [
+    "contextMenus",
+    "tabs",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_icon": {
+      "16": "images/icon16.png",
+      "48": "images/icon48.png",
+      "128": "images/icon128.png"
+    },
+    "default_title": "小橘按键 - 点击管理网址"
+  },
+  "options_page": "options.html",
+  "icons": {
+    "16": "images/icon16.png",
+    "48": "images/icon48.png",
+    "128": "images/icon128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; style-src 'self' https://res.wx.qq.com;"
+  }
+}

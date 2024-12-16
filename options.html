@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>小橘按键设置</title>
+  <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+  <div class="weui-form">
+    <h1 class="weui-form__title">定向跳转管理</h1>
+    
+    <div class="weui-form__control-area">
+      <div class="weui-cells__group weui-cells__group_form">
+        <div class="weui-cells__title">添加新的跳转</div>
+        <div class="weui-cells weui-cells_form">
+          <div class="weui-cell">
+            <div class="weui-cell__hd"><label class="weui-label">名称</label></div>
+            <div class="weui-cell__bd">
+              <input id="newName" class="weui-input" placeholder="输入名称"/>
+            </div>
+          </div>
+          <div class="weui-cell">
+            <div class="weui-cell__hd"><label class="weui-label">网址</label></div>
+            <div class="weui-cell__bd">
+              <input id="newUrl" class="weui-input" placeholder="输入网址"/>
+            </div>
+          </div>
+        </div>
+        <div class="weui-form__opr-area">
+          <button id="addButton" class="weui-btn weui-btn_primary">添加</button>
+        </div>
+      </div>
+
+      <div class="weui-cells__group weui-cells__group_form">
+        <div class="weui-cells__title">已添加的跳转</div>
+        <div id="bookmarkList" class="weui-cells">
+          <!-- 书签列表将通过 JavaScript 动态添加 -->
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="options.js"></script>
+</body>
+</html>
